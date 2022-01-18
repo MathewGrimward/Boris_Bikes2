@@ -12,7 +12,7 @@ require './lib/docking_station.rb'
 =begin
     it 'releases bike' do
       docking_station = DockingStation.new
-      expect(docking_station.release_bike).to eq 'Bike Released!'
+      expect(docking_station.release_bike).to respond_to 'Bike Released!'
     end
 =end
     
