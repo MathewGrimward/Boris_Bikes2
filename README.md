@@ -5,7 +5,7 @@ Challenge 2.
 
 Person > Docking Station > Bike
 
-Person > Good Bike > Working? > Docking Station > Release Bike
+Person > Good Bike > Working?
 
 
 Challenge 3.
