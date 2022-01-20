@@ -4,18 +4,17 @@ class DockingStation
   attr_reader :bike
 
   def initialize
-    @docked = []
+    @dock = []
   end
 
   def dock_bike(bike)
-    @docked << bike
+    @dock << bike
     "Bike docked!"
   end
 
   def release_bike
-    fail 'No bikes available' unless 
+    fail 'No bikes available' unless @bike
     @bike
-    Bike.new
   end
 
   def dock(bike)
