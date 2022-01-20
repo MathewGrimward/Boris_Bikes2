@@ -20,13 +20,13 @@ require './lib/docking_station.rb'
   describe '#dock' do
     it 'docks something' do
       bike = Bike.new
-      expect(subject.dock(bike)).to eq bike
+      expect(subject.dock(bike)).to eq [bike]
     end
   end
 
   describe '#dock' do
     it 'gives an error when docking station is full' do
-      subject.dock(Bike.new)
+      20.times { subject.dock Bike.new }
       expect { subject.dock Bike.new }.to raise_error 'Docking station is full'
     end
   end
